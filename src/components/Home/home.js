@@ -2,18 +2,16 @@
 
 import React, { Component } from "react";
 import SlideShow from "./SlideShow";
-import About from "./About";
 import Cards from "./cards";
+import Body from "./body";
 class Home extends Component {
 	state = {};
 	render() {
 		return (
 			<div className="">
 				<SlideShow />
-				<br/>
-				<br/>
 				<Cards/>
-				<About />
+				<Body/>
 			</div>
 		);
 	}

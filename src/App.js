@@ -8,7 +8,6 @@ import Profile from "./components/Dashboard/Profile";
 import UserProfile from "./components/Dashboard/profile2";
 import SignIn from "./components/Auth/SignIn";
 import SignUp from "./components/Auth/SignUp";
-import Footer from "./components/Home/Footer";
 import BatchTen from "./components/TopNavbar/AlumuniNetwork/BatchTen";
 import BatchEleven from "./components/TopNavbar/AlumuniNetwork/BatchEleven";
 import BatchTwelve from "./components/TopNavbar/AlumuniNetwork/BatchTwelve";
@@ -20,6 +19,7 @@ import NotFound from "./components/All/Notfound";
 import Donate from "./components/TopNavbar/Donate";
 import Magazine from "./components/TopNavbar/Magazine";
 import Navbar from "./components/TopNavbar/Navbar";
+import Footer from "./components/Home/Footer2";
 
 function App() {
 	return (
@@ -46,7 +46,8 @@ function App() {
 
 					<Route component={NotFound} />
 				</Switch>
-				<Footer />
+				<Footer/>
+				
 			</div>
 		</BrowserRouter>
 	);
