@@ -11,16 +11,16 @@ import SignUp from "./components/Auth/SignUp";
 import BatchTen from "./components/TopNavbar/AlumuniNetwork/BatchTen";
 import BatchEleven from "./components/TopNavbar/AlumuniNetwork/BatchEleven";
 import BatchTwelve from "./components/TopNavbar/AlumuniNetwork/BatchTwelve";
-import BatchThirteen from "./components/TopNavbar/AlumuniNetwork/BatchThirteen";
 import Home from "./components/Home/home";
-import MainGallery from "./components/TopNavbar/Gallery";
 import NotFound from "./components/All/Notfound";
 // import LazyLoading from "./components/All/LazyLoading";
 import Donate from "./components/TopNavbar/Donate";
 import Magazine from "./components/TopNavbar/Magazine";
 import Navbar from "./components/TopNavbar/Navbar";
 import Footer from "./components/Home/Footer2";
-
+import Contactusheader from "./components/Home/Contactusheader";
+import Menucomponent from "./components/Home/Menucomponent";
+import AboutUs from "./components/Home/aboutus";
 function App() {
 	return (
 		<BrowserRouter>
@@ -31,7 +31,7 @@ function App() {
 					
 					<Route exact path="/" component={Home} />
 					<Route path="/navbar" component={TopNavbar} />
-					<Route path="/gallery" component={MainGallery} />
+					<Route path="/aboutus" component={AboutUs} />
 					<Route path="/donate" component={Donate} />
 					<Route path="/magazine" component={Magazine} />
 					<Route path="/YourProfile/:id" component={UserProfile} />
@@ -41,7 +41,8 @@ function App() {
 					<Route path="/alumni/2010" component={BatchTen} />
 					<Route path="/alumni/2011" component={BatchEleven} />
 					<Route path="/alumni/2012" component={BatchTwelve} />
-					<Route path="/alumni/2013" component={BatchThirteen} />
+					<Route path="/menu" component={Menucomponent} />
+					<Route path="/contactus" component={Contactusheader} />
 					{/* <Route path="/lazyloading" component={LazyLoading} /> */}
 
 					<Route component={NotFound} />
