@@ -1,222 +1,122 @@
-/** @format */
+import React from 'react';
+import './Footer.css';
+// import { Button } from './Button';
+import { Link } from 'react-router-dom';
 
-import React, { Component } from "react";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// npm install --save-dev @iconify/react @iconify/icons-fa-solid
-// import { Icon, InlineIcon } from '@iconify/react';
-// import cloudUploadAlt from '@iconify/icons-fa-solid/cloud-upload-alt';
-
-import {
-	faFacebookF,
-	faGooglePlusG,
-	faTwitter,
-	faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
-import {
-	faHome,
-	faPhone,
-	faEnvelope,
-	faPrint,
-	faPencilAlt,
-	faCloudUploadAlt,
-} from "@fortawesome/free-solid-svg-icons";
-import { NavLink } from "react-router-dom";
-
-library.add(
-	faFacebookF,
-	faTwitter,
-	faInstagram,
-	faGooglePlusG,
-	faHome,
-	faPhone,
-	faEnvelope,
-	faPrint,
-	faPencilAlt,
-	faCloudUploadAlt
-);
-
-class Footer extends Component {
-	state = {};
-	render() {
-		return (
-			<div>
-				{/* <!-- Footer --> */}
-				<footer
-					className="page-footer font-small blue-grey lighten-5 p-15"
-					style={{ paddingLeft: "15px", paddingRight: "15px" }}
-				>
-					<div style={{ backgroundColor: "#32d49b59" }}>
-						<div className="container">
-							{/* <!-- Grid row--> */}
-							<div className="row py-2 d-flex align-items-center">
-								{/* <!-- Grid column --> */}
-								<div className="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-									<h6 className="mb-0">
-										Get connected with us on social
-										networks!
-									</h6>
-								</div>
-								{/* <!-- Grid column --> */}
-
-								{/* <!-- Grid column --> */}
-								<div className="col-md-6 col-lg-7 text-center text-md-right">
-									{/* <!-- Facebook --> */}
-									<a className="fb-ic" href="//">
-										{/* <i className="fab fa-facebook-f white-text mr-4"></i> */}
-										<FontAwesomeIcon
-											icon={["fab", "facebook-f"]}
-											size="2x"
-											// transform="left-60 grow-2.5"
-											style={{ marginRight: "24px" }}
-										/>
-									</a>
-									{/* <!-- Twitter --> */}
-									<a className="tw-ic" href="#!">
-										<FontAwesomeIcon
-											icon={["fab", "twitter"]}
-											size="2x"
-											// transform="left-40 grow-2.5"
-											style={{ marginRight: "24px" }}
-										/>
-									</a>
-									<a
-										className="ins-ic"
-										href="https://www.instagram.com/alumni.sav/?hl=en"
-									>
-										<FontAwesomeIcon
-											icon={["fab", "instagram"]}
-											size="2x"
-											// transform="left-20 grow-2.5"
-											style={{ marginRight: "24px" }}
-										/>
-									</a>
-								</div>
-								{/* <!-- Grid column --> */}
-							</div>
-							{/* <!-- Grid row--> */}
-						</div>
-					</div>
-
-					{/* <!-- Footer Links --> */}
-					<div className="container-fluid text-center text-md-left mt-2">
-						{/* <!-- Grid row --> */}
-						<div className="row dark-grey-text">
-							{/* <!-- Grid column --> */}
-							<div className="col-md-4 col-lg-4 col-xl-4">
-								{/* <!-- Content --> */}
-								<h6 className="text-uppercase font-weight-bold">
-									Simultala Awasiya Vidyalaya
-								</h6>
-								<hr
-									className="teal accent-3 mb-2 mt-0 d-inline-block mx-auto"
-									style={{ width: "120px" }}
-								/>
-								<p>
-									This platform is entirely dedicated to all
-									the members of Simulatala Awasiya Vidyalaya.
-									This platform will enhance the interaction
-									between the school body and the student
-									body.
-								</p>
-							</div>
-							{/* <!-- Grid column --> */}
-
-							{/* <!-- Grid column --> */}
-							<div className="col-md-4 col-lg-4 col-xl-4 mx-auto">
-								{/* <!-- Links --> */}
-								<h6 className="text-uppercase font-weight-bold ">
-									Quick links
-								</h6>
-								<hr
-									className="teal accent-3 mb-2 mt-0 d-inline-block mx-auto"
-									style={{ width: "60px" }}
-								/>
-								<p>
-									<NavLink className="dark-grey-text" to="/">
-										Home
-									</NavLink>
-								</p>
-								<p>
-									<NavLink
-										className="dark-grey-text"
-										to="gallery"
-									>
-										Gallery
-									</NavLink>
-								</p>
-								<p>
-									<NavLink
-										className="dark-grey-text"
-										to="/donate"
-									>
-										Make Donation
-									</NavLink>
-								</p>
-								<p>
-									<NavLink
-										className="dark-grey-text"
-										to="/magazine"
-									>
-										Magazine
-									</NavLink>
-								</p>
-							</div>
-							{/* <!-- Grid column --> */}
-
-							{/* <!-- Grid column --> */}
-							<div className="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0">
-								{/* <!-- Links --> */}
-								<h6 className="text-uppercase font-weight-bold">
-									Contact
-								</h6>
-								<hr
-									className="teal accent-3 mb-2 mt-0 d-inline-block mx-auto"
-									style={{ width: "60px" }}
-								/>
-								<p>
-									<FontAwesomeIcon
-										icon={"home"}
-										// size="2x"
-										// // transform="left-20 grow-2.5"
-										// style={{ marginRight: "24px" }}
-									/>{" "}
-									Simultala, Jamui, Bihar India 811310
-								</p>
-								<p>
-									<FontAwesomeIcon icon={"envelope"} />{" "}
-									alumni.sav@gmail.com
-								</p>
-								<p>
-									<FontAwesomeIcon icon={"phone"} /> +91
-									7372959343
-								</p>
-								<p>
-									<FontAwesomeIcon icon={"print"} /> + 01 234
-									567 89
-								</p>
-							</div>
-							{/* <!-- Grid column --> */}
-						</div>
-						{/* <!-- Grid row --> */}
-					</div>
-					{/* <!-- Footer Links --> */}
-
-					{/* <!-- Copyright --> */}
-					<div className="footer-copyright text-center text-black-50">
-						© 2020 Copyright:{" "}
-						<small>
-							<a href="https://www.instagram.com/satyamcheeku/?hl=en">
-								Satyam Kumar
-							</a>
-						</small>
-					</div>
-					{/* <!-- Copyright --> */}
-				</footer>
-				{/* <!-- Footer --> */}
-			</div>
-		);
-	}
+function Footer() {
+    return (
+        <div className='footer-container'>
+            {/* <section className='footer-subscription'>
+                <p className='footer-subscription-heading'>
+                    Join the Adventure newsletter to receive our best vacation deals
+        </p>
+                <p className='footer-subscription-text'>
+                    You can unsubscribe at any time.
+        </p>
+                <div className='input-areas'>
+                    <form>
+                        <input
+                            className='footer-input'
+                            name='email'
+                            type='email'
+                            placeholder='Your Email'
+                        />
+                        <Button buttonStyle='btn--outline'>Subscribe</Button>
+                    </form>
+                </div>
+            </section> */}
+            <div class='footer-links'>
+                <div className='footer-link-wrapper'>
+                    <div class='footer-link-items'>
+                        <h2>About Us</h2>
+                        <Link to='/sign-up'>How it works</Link>
+                        <Link to='/'>Testimonials</Link>
+                        <Link to='/'>Careers</Link>
+                        <Link to='/'>Investors</Link>
+                        <Link to='/'>Terms of Service</Link>
+                    </div>
+                    <div class='footer-link-items'>
+                        <h2>Contact Us</h2>
+                        <Link to='/'>Contact</Link>
+                        <Link to='/'>Support</Link>
+                        <Link to='/'>Destinations</Link>
+                        <Link to='/'>Sponsorships</Link>
+                    </div>
+                </div>
+                <div className='footer-link-wrapper'>
+                    <div class='footer-link-items'>
+                        <h2>Videos</h2>
+                        <Link to='/'>Submit Video</Link>
+                        <Link to='/'>Ambassadors</Link>
+                        <Link to='/'>Agency</Link>
+                        <Link to='/'>Influencer</Link>
+                    </div> 
+                    <div class='footer-link-items'>
+                        <h2>Social Media</h2>
+                        <Link to='/'><i class='fab fa-instagram' /> Instagram</Link>
+                        <Link to='/'><i class='fab fa-facebook-f' /> Facebook</Link>
+                        <Link to='/'><i class='fab fa-youtube' /> Youtube</Link>
+                        <Link to='/'><i class='fab fa-twitter' /> Twitter</Link>
+                    </div>
+                </div>
+            </div>
+            <section class='social-media'>
+                <div class='social-media-wrap'>
+                    <div class='footer-logo'>
+                        <Link to='/' className='social-logo'>
+                            iHANGOVER
+              <i class='fab fa-typo3' />
+                        </Link>
+                    </div>
+                    <small class='website-rights'>iHANGOVER © 2021</small>
+                    <div class='social-icons'>
+                        <Link
+                            class='social-icon-link facebook'
+                            to='/'
+                            target='_blank'
+                            aria-label='Facebook'
+                        >
+                            <i class='fab fa-facebook-f' />
+                        </Link>
+                        <Link
+                            class='social-icon-link instagram'
+                            to='/'
+                            target='_blank'
+                            aria-label='Instagram'
+                        >
+                            <i class='fab fa-instagram' />
+                        </Link>
+                        <Link
+                            class='social-icon-link youtube'
+                            to='/'
+                            target='_blank'
+                            aria-label='Youtube'
+                        >
+                            <i class='fab fa-youtube' />
+                        </Link>
+                        <Link
+                            class='social-icon-link twitter'
+                            to='/'
+                            target='_blank'
+                            aria-label='Twitter'
+                        >
+                            <i class='fab fa-twitter' />
+                        </Link>
+                        <Link
+                            class='social-icon-link twitter'
+                            to='/'
+                            target='_blank'
+                            aria-label='LinkedIn'
+                        >
+                            <i class='fab fa-linkedin' />
+                        </Link>
+                    </div>
+                </div>
+            </section>
+            <hr/>
+            <p className='hfoot' style={{fontSize:'15px'}}>Website developer :: Permender Kumar (6377076132) || Satyam Kumar (6377076132)</p>
+        </div>
+    );
 }
 
 export default Footer;

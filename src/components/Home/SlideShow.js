@@ -1,10 +1,7 @@
 /** @format */
 
 import React from "react";
-import SignedIn from "../Dashboard/SignedIn";
-import SignedOut from "../Dashboard/SignedOut";
 import { connect } from "react-redux";
-import SignIn from "../Auth/SignIn";
 const SlideShow = (props) => {
 	const { auth } = props;
 	return (
@@ -113,12 +110,6 @@ const SlideShow = (props) => {
 	);
 };
 
-const mapStateToProps = (state) => {
-	console.log("hi from slodeshow");
-	console.log(state);
-	return {
-		auth: state.firebase.auth,
-	};
-};
 
-export default connect(mapStateToProps)(SlideShow);
+
+export default SlideShow

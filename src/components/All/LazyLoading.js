@@ -1,7 +1,6 @@
 /** @format */
 
 import React from "react";
-import data from "../../data/dummyData";
 import LazyLoad from "react-lazyload";
 
 const Spinner = () => (

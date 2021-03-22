@@ -1,7 +1,6 @@
 /** @format */
 
 import React, { Component } from "react";
-import GalleryPreview from "../All/SMGallery";
 
 class Cards extends Component {
 	state = {};

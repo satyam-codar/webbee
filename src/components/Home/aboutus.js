@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Footer from './Footer2'
+import Footer from './Footer'
 
 export default class AboutUs extends Component {
     render() {
