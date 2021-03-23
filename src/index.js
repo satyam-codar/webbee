@@ -1,7 +1,7 @@
 /** @format */
 
 import "bootstrap/dist/css/bootstrap.min.css";
-// import $ from "jquery";
+import $ from "jquery";
 // import Popper from "popper.js";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 // import { Route, BrowserRouter as Router, Switch } from "react-router-dom";

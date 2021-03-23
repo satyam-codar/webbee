@@ -8,7 +8,7 @@ function Contactusheader() {
         <div>
             <div className="page-header">
                 <figure className=''>
-                    < img src="temptt/img-3.jpg"
+                    < img src="images/img12.jpg"
                         alt="" />
                 </figure>
                 <div className='cont'> < h1 > Contact us </h1>
@@ -30,28 +30,27 @@ function Contactusheader() {
                             </p>
                                 <form action method="post" id="contactform" class="contact-form">
                                     <div className="row">
-                                        <div className="col-sm-4 colum">
+                                        <div className="col-sm-4 colum col-md-4">
                                             <p className="contact-form-author">
-                                                <input type="text" required='required' size='30' value name="author" id='author'
+                                                <input type="text" required='required' size='30' valuename="author" id='author'
                                                     placeholder='Name'/>
                                             </p>
                                         </div>
-                                        <div className="col-sm-4 colum">
+                                        <div div className = "col-sm-4 colum col-md-4" >
                                             <p className="contact-form-email">
-                                                <input type="email" required='required' size='30' value name="email" id='email'
+                                                <input type="email" required='required' size='30' valuename="email" id='email'
                                                     placeholder='Email'/>
                                             </p>
                                         </div>
-                                        <div div className = "col-sm-4 colum" >
+                                        <div div div className = "col-sm-4 colum col-md-4" >
                                             <p className="contact-form-Subject">
-                                                <input type="text" required='required' size='30' value name="subject" id='subject'
+                                                <input type="text" required='required' size='30' valuename="subject" id='subject'
                                                     placeholder="Subject"/>
                                             </p>
                                         </div>
                                     </div>
                                     <p className="contact-form-message">
                                         <textarea required="required" rows="3" cols="45" name="message" id="message" placeholder="Your message">
-
                                         </textarea>
                                     </p>
                                     <p className="form-submit button">
@@ -74,13 +73,21 @@ function Contactusheader() {
                                     "gujarat,India"
                                 </p>
                                     <p>
-                                       <i class="fas fa-envelope"></i>
-                                    "info@shambhuscoffeebar.com"
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="mailto:info@shambhuscoffeebar.com"> info@shambhuscoffeebar.com</a>
                                 </p>
                                     <p>
                                         <i className="fas fa-phone mr-3"></i>
-                                    "+91 6377076132"
+                                    <a href="tel:+91 6377076132">+91 6377076132</a>
                                 </p>
+                                <p className="form-submit button">
+                                        <a href = "https://www.google.com/maps/place/iHangover/@23.1847542,72.6289328,234m/data=!3m1!1e3!4m5!3m4!1s0x395c2b54bdb17051:0x84582cab1e680bcc!8m2!3d23.1847542!4d72.6289328" > < button class = "hvr-rectangle-out"
+                                        type = "submit"
+                                        id = "submit"
+                                        name = "submit" >
+                                            Reach US
+                                        </button></a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -91,7 +98,7 @@ function Contactusheader() {
                 <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1118.666094809882!2d72.6289328!3d23.1847542!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2b54bdb17051%3A0x84582cab1e680bcc!2siHangover!5e1!3m2!1sen!2sin!4v1615871964087!5m2!1sen!2sin"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
             </div> */}
-            <div className="container">
+            {/* <div className="container">
                 {/* <Map google={this.props.google} zoom={14}>
     
                     <Marker onClick={this.onMarkerClick}
@@ -103,15 +110,6 @@ function Contactusheader() {
                         </div>
                     </InfoWindow>
                 </Map> */}
-                <GoogleMap/>
-                <br/>
-                <br/>
-            </div>
-            {/* <div> */}
-            {/* <div className="earth3dmap-com">
-                <iframe id="iframemap" src="https://maps.google.com/maps?q=gandhinagar&amp;ie=UTF8&amp;iwloc=&amp;output=embed" width="100%" height="500px" frameborder="0" scrolling="no"></iframe>
-                <div style={{color: "green", fontSize: "14px", fontFamily: "Arial", textAlign: "right", padding: "10px"}}>Map by <a style={{color: "#333", textDecoration: "underline", fontSize:"14px", fontFamily: "Arial", textAlign: "right"}} href="http://earth3dmap.com/?from=embed" target="_blank" >Earth3DMap.com</a></div>
-            </div> */}
         </div>
     )
 }

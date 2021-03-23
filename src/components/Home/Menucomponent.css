@@ -15,22 +15,14 @@
     color: white;
 }
 
-/* .page-header .figure {
-    margin: 0px;
-    display: block;
-    height: auto;
-    overflow: hidden;
-    padding: 0px;
-    /* height: 10px; */
-/* } */
-
 .page-header img {
     margin: 0px;
     object-fit: cover;
     vertical-align: middle;
     width: 100%;
+    opacity: 0.85;
     height: 400px;
-    /* height: 800px; */
+    
     /* max-width: 500px; */
 }
 
@@ -51,10 +43,6 @@ hr {
 /* -------------------------------------------------------------------- */
 .menu {
     background-position: center center;
-    /* background-image: url(backend3.jpg); */
-    /* background-size: 55%; */
-    /* padding-top: 241px; */
-    /* background-image: url(images/backend3.jpg); */
 }
 
 .menu2 {
@@ -63,88 +51,40 @@ hr {
 }
 
 .menu1 {
-    /* background-image:url(./images/backy.jpeg); */
-    /* margin-top: 30px; */
     padding-top: 10px;
     padding-bottom: 10px;
-    /* padding: 30px auto 20px auto; */
-    /* margin-bottom: 30px; */
     align-items: center;
     text-align: center;
-    /* border: 4px solid green; */
 }
-
-
-.menu {
-    /* padding: 10px auto 15px auto; */
-    /* margin: 0px auto 0px auto; */
-    /* border: 4px solid green; */
-}
-
-.menu2 {
-    /* padding: 10px auto 15px auto; */
-    /* margin: 0px auto 0px auto; */
-    /* border: 1px solid rgb(16, 34, 16); */
-}
-
-/* 
-hr .hr1{
-    border: 1px solid red;
-    width: 10px;
-}
-.hr2{
-    border: red;
-}
-
-hr{
-    width: 100px;
-    height: 10px;
-    margin: auto;
-} */
-/* img{
-    margin: 40px;
-} */
 
 
 .toppings {
     text-align: center;
 }
 
-/* .figure {
-    margin: 0px;
-    padding: 0px;
-    display: block;
-    height: auto;
-    overflow: hidden;
-    padding: 0px;
-    height: 10px; */
-/* } */
 .specialmenu img {
-    height: 100%;
+    width: 100%;
+    margin: 0px;
+    opacity:0.8;
+    max-height: 600px;
+    /* height: auto; */
+    /* overflow: cover; */
     object-fit: cover;
     vertical-align: middle;
-    transition: transform 0.5s ease;
-
+    /* transition: transform 0.5s ease; */
 }
 
 .pricerange {
     text-align: center;
 }
 
-/* img:hover{
-    size: ;
-} */
-
-
-.content {
+.content{
     padding: 20px;
-    background-color: #4c2921;
-    /* background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.5)
-    , rgba(0, 0, 0, 0.5) 5px, transparent 5px, transparent 100%);
-     */
-    text-align: justify;
-    /* background-size: 7px 7px; */
+    
     color: aliceblue;
+}
+.content2{
+    padding: 0px;
 }
 
 .content1 {
@@ -155,13 +95,9 @@ hr{
 
 .specialmenu {
     border: 8px solid rgb(88, 13, 13);
-    /* padding: 10px 10px 10px 10px; */
-    margin: 0px auto 15px auto;
-    /* background-color: rgb(92, 37, 27); */
+    background-color: #4c2921;
+    margin: 0px auto 0px auto;
 }
-
-/* .rowtoppings .col-md-6 {
-    /* height: auto; */
 
 .title {
     margin: 10px auto 5px auto;
@@ -174,21 +110,11 @@ hr{
     vertical-align: middle;
     opacity: 0.5;
     max-width: 100%;
-    height: 100%;
-    /* max-width: 100%; */
-    /* height: 800px; */
-    /* max-width: 500px; */
-}
-
-.toppingimg {
-    /* border: 2px solid gray; */
 }
 
 .toppingcontent {
     position: absolute;
-    /* border: 2px solid green; */
-    /* padding: 10px 0px 10px 0px; */
-    top: 51px;
+    top: 5%;
     /* bottom: 5px; */
     left: 50%;
     transform: translate(-50%, -0%);
@@ -223,4 +149,28 @@ h2 {
 .menu2 img:hover {
     transform: scale(1.1);
 }
+.menu img{
+    transition: transform 0.5s ease;
+}
 
+@media screen and (max-width: 750px) {
+    .description{
+        /* float: none;/ */
+        display: none;
+        /* content: "ola "; */
+    }
+    .toppingimg img{
+        height: 400px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .description {
+        /* float: none;/ */
+        display: none;
+        /* content: "ola "; */
+    }
+
+    /* .toppingimg img {
+        height: 400px;
+    } */
+}

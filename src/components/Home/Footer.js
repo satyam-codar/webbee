@@ -6,115 +6,102 @@ import { Link } from 'react-router-dom';
 function Footer() {
     return (
         <div className='footer-container'>
-            {/* <section className='footer-subscription'>
-                <p className='footer-subscription-heading'>
-                    Join the Adventure newsletter to receive our best vacation deals
-        </p>
-                <p className='footer-subscription-text'>
-                    You can unsubscribe at any time.
-        </p>
-                <div className='input-areas'>
-                    <form>
-                        <input
-                            className='footer-input'
-                            name='email'
-                            type='email'
-                            placeholder='Your Email'
-                        />
-                        <Button buttonStyle='btn--outline'>Subscribe</Button>
-                    </form>
-                </div>
-            </section> */}
             <div class='footer-links'>
-                <div className='footer-link-wrapper'>
-                    <div class='footer-link-items'>
-                        <h2>About Us</h2>
-                        <Link to='/sign-up'>How it works</Link>
-                        <Link to='/'>Testimonials</Link>
-                        <Link to='/'>Careers</Link>
-                        <Link to='/'>Investors</Link>
-                        <Link to='/'>Terms of Service</Link>
+                <div className="row footerlink">
+                    <div className="col-md-4">
+                        <h2 style={{color:"white",textAlign:"left"}}>About Us</h2>
+                        <ul>
+                            <li><Link to='/sign-up'>How it works</Link></li>
+                            <li><Link to='/'>Testimonials</Link></li>
+                            <li><Link to='/'>Careers</Link></li>
+                            <li>  <Link to='/'>Investors</Link></li>
+                            <li><Link to='/'>Terms of Service</Link></li>
+                        </ul>
                     </div>
-                    <div class='footer-link-items'>
-                        <h2>Contact Us</h2>
-                        <Link to='/'>Contact</Link>
-                        <Link to='/'>Support</Link>
-                        <Link to='/'>Destinations</Link>
-                        <Link to='/'>Sponsorships</Link>
+                    <div className="col-md-4">
+                        <h2 style={{color:"white", textAlign:"left"}}>Contact Us</h2>
+                        <ul>
+                            <li>  <Link to='/'>Contact</Link></li>
+                            <li> <Link to='/'>Support</Link></li>
+                            <li><Link to='/'>Destinations</Link></li>
+                            <li><Link to='/'>Sponsorships</Link></li>
+                        </ul>
                     </div>
+                    <div className="col-md-4">
+                        <h2 style={{color:"white", textAlign:"left"}} >Social Media</h2>
+                        <ul>
+                            <li><Link to='/'><i class='fab fa-instagram' /> Instagram</Link></li>
+                            <li> <Link to='/'><i class='fab fa-youtube' /> Youtube</Link></li>
+                            <li><Link to='/'><i class='fab fa-twitter' /> Twitter</Link></li>
+                            <li></li>
+                        </ul>
+                    </div>
+
                 </div>
-                <div className='footer-link-wrapper'>
-                    <div class='footer-link-items'>
-                        <h2>Videos</h2>
-                        <Link to='/'>Submit Video</Link>
-                        <Link to='/'>Ambassadors</Link>
-                        <Link to='/'>Agency</Link>
-                        <Link to='/'>Influencer</Link>
-                    </div> 
-                    <div class='footer-link-items'>
-                        <h2>Social Media</h2>
-                        <Link to='/'><i class='fab fa-instagram' /> Instagram</Link>
-                        <Link to='/'><i class='fab fa-facebook-f' /> Facebook</Link>
-                        <Link to='/'><i class='fab fa-youtube' /> Youtube</Link>
-                        <Link to='/'><i class='fab fa-twitter' /> Twitter</Link>
-                    </div>
-                </div>
+
             </div>
+
             <section class='social-media'>
-                <div class='social-media-wrap'>
-                    <div class='footer-logo'>
-                        <Link to='/' className='social-logo'>
-                            iHANGOVER
-              <i class='fab fa-typo3' />
-                        </Link>
+                    <div className="row">
+                        <div className="col-md-4">
+                            <div class='footer-logo'>
+                                <Link to='/' className='social-logo'>
+                                    iHANGOVER
+                            <i class='fab fa-typo3' />
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="col-md-4">
+                            <small class='website-rights'>iHANGOVER © 2021</small>
+                        </div>
+                        <div className="col-md-4">
+                            <div class='social-icons'>
+                                <Link
+                                    class='social-icon-link facebook'
+                                    to='/'
+                                    target='_blank'
+                                    aria-label='Facebook'
+                                >
+                                    <i class='fab fa-facebook-f' />
+                                </Link>
+                                <Link
+                                    class='social-icon-link instagram'
+                                    to='/'
+                                    target='_blank'
+                                    aria-label='Instagram'
+                                >
+                                    <i class='fab fa-instagram' />
+                                </Link>
+                                <Link
+                                    class='social-icon-link youtube'
+                                    to='/'
+                                    target='_blank'
+                                    aria-label='Youtube'
+                                >
+                                    <i class='fab fa-youtube' />
+                                </Link>
+                                <Link
+                                    class='social-icon-link twitter'
+                                    to='/'
+                                    target='_blank'
+                                    aria-label='Twitter'
+                                >
+                                    <i class='fab fa-twitter' />
+                                </Link>
+                                <Link
+                                    class='social-icon-link twitter'
+                                    to='/'
+                                    target='_blank'
+                                    aria-label='LinkedIn'
+                                >
+                                    <i class='fab fa-linkedin' />
+                                </Link>
+                            </div>
+                        </div>
                     </div>
-                    <small class='website-rights'>iHANGOVER © 2021</small>
-                    <div class='social-icons'>
-                        <Link
-                            class='social-icon-link facebook'
-                            to='/'
-                            target='_blank'
-                            aria-label='Facebook'
-                        >
-                            <i class='fab fa-facebook-f' />
-                        </Link>
-                        <Link
-                            class='social-icon-link instagram'
-                            to='/'
-                            target='_blank'
-                            aria-label='Instagram'
-                        >
-                            <i class='fab fa-instagram' />
-                        </Link>
-                        <Link
-                            class='social-icon-link youtube'
-                            to='/'
-                            target='_blank'
-                            aria-label='Youtube'
-                        >
-                            <i class='fab fa-youtube' />
-                        </Link>
-                        <Link
-                            class='social-icon-link twitter'
-                            to='/'
-                            target='_blank'
-                            aria-label='Twitter'
-                        >
-                            <i class='fab fa-twitter' />
-                        </Link>
-                        <Link
-                            class='social-icon-link twitter'
-                            to='/'
-                            target='_blank'
-                            aria-label='LinkedIn'
-                        >
-                            <i class='fab fa-linkedin' />
-                        </Link>
-                    </div>
-                </div>
             </section>
-            <hr/>
-            <p className='hfoot' style={{fontSize:'15px'}}>Website developer :: Permender Kumar (6377076132) || Satyam Kumar (6377076132)</p>
+            <hr />
+            <p className='hfoot' style={{ fontSize: '15px' }}>Website developer :: Permender Kumar (6377076132) || Satyam Kumar (6377076132)</p>
         </div>
     );
 }

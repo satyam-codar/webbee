@@ -1,6 +1,6 @@
 .footer-container {
     background-color: #242424;
-    padding: 4rem 0 0rem 0;
+    padding: 1rem 0 0rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,6 +18,8 @@
     padding: 24px;
     color: #fff;
 }
+
+
 
 .footer-subscription>p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
@@ -175,3 +177,23 @@ hr{
 }
 
 @media screen and (max-width: 768px) {}
+
+
+ul li{
+    list-style-type:none;
+    margin: 15px 0 15px 10px;
+}
+
+.footerlink{
+    display: flex;
+    color: #fff;
+}
+
+.social-media{
+    margin: 15px 0px 0px 0px;
+}
+
+h2{
+    text-align: left;
+}
+

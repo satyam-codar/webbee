@@ -8,7 +8,7 @@ const SlideShow = (props) => {
 		// <!-- Slide show -->
 
 		<div className="container-fluid pl-0 pr-0">
-			<div className="row no-gutters">
+			<div className="row no-gutters ml-0">
 				{/* <div className="col-md-2 col-lg-2">
 					{auth.isEmpty ? <SignedOut /> : <SignedIn />}
 				</div> */}
@@ -37,38 +37,41 @@ const SlideShow = (props) => {
 						<div className="carousel-inner">
 							<div className="carousel-item active">
 								<img
-									src="temptt/home-slider1.jpg"
-									alt="Los Angeles"
+									src="images/pexels-cats-coming-365459.jpg"
+									alt="Los slider-photo-1-1900x950"
 									width="100%"
 									height="auto"
+									style={{opacity:"0.9", overflow:"hidden"}}
 								/>
 								<div className="carousel-caption d-none d-md-block">
 									<h3>A MULTI-CUISINE RESTAURANT</h3>
-									<p>Here at Temptt, our focus is on the whole experience of enjoying multi-cuisine food and a luxury dining experience. We aim to provide patrons with great food, desserts, service and experience and this philosophy is shared among all our staff. We are a motivated team of health-conscious individuals who are committed to the highest standards of food quality and customer service.</p>
+									<p>Here at images, our focus is on the whole experience of enjoying multi-cuisine food and a luxury dining experience. We aim to provide patrons with great food, desserts, service and experience and this philosophy is shared among all our staff. We are a motivated team of health-conscious individuals who are committed to the highest standards of food quality and customer service.</p>
 								</div>
 							</div>
 							<div className="carousel-item">
 								<img
-									src="temptt/home-slider3.jpg"
+									src="images/home-slider3.jpg"
 									alt="Chicago"
 									width="100%"
 									height="auto"
+									style={{opacity:"0.9", overflow:"hidden"}}
 								/>
 								<div className="carousel-caption d-none d-md-block">
 									<h3>A MULTI-CUISINE RESTAURANT</h3>
-									<p>Here at Temptt, our focus is on the whole experience of enjoying multi-cuisine food and a luxury dining experience. We aim to provide patrons with great food, desserts, service and experience and this philosophy is shared among all our staff. We are a motivated team of health-conscious individuals who are committed to the highest standards of food quality and customer service.</p>
+									<p>Here at images, our focus is on the whole experience of enjoying multi-cuisine food and a luxury dining experience. We aim to provide patrons with great food, desserts, service and experience and this philosophy is shared among all our staff. We are a motivated team of health-conscious individuals who are committed to the highest standards of food quality and customer service.</p>
 								</div>
 							</div>
 							<div className="carousel-item">
 								<img
-									src="temptt/sarkhej-restaurant-concept.jpg"
+									src="images/pexels-jonathan-borba-2983101.jpg"
 									alt="Chicago"
 									width="100%"
 									height="auto"
+									style={{opacity:"0.9", overflow:"hidden"}}
 								/>
 								<div className="carousel-caption d-none d-md-block">
 									<h3>A MULTI-CUISINE RESTAURANT</h3>
-									<p>Here at Temptt, our focus is on the whole experience of enjoying multi-cuisine food and a luxury dining experience. We aim to provide patrons with great food, desserts, service and experience and this philosophy is shared among all our staff. We are a motivated team of health-conscious individuals who are committed to the highest standards of food quality and customer service.</p>
+									<p>Here at images, our focus is on the whole experience of enjoying multi-cuisine food and a luxury dining experience. We aim to provide patrons with great food, desserts, service and experience and this philosophy is shared among all our staff. We are a motivated team of health-conscious individuals who are committed to the highest standards of food quality and customer service.</p>
 								</div>
 							</div>
 							{/* <!-- <div className="carousel-item">

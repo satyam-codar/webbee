@@ -1,0 +1,25 @@
+.welcome{
+    text-align: justify;
+    margin: auto;
+    color: black;  
+}
+.welcome h1,h2{
+    text-align: center;
+    color: black;
+    font-style: normal;
+}
+.welcome h2{
+    font-size: 30px;
+}
+
+.welcomecontent{
+    margin: 15% 0 10% 0;
+    
+}
+.about{
+    margin: 50px 0 20px 0;
+}
+.nextdiv{
+    background-color: rgb(206, 189, 170);
+    margin: 5% 0 5% 0;
+}
